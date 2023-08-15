@@ -1,6 +1,5 @@
 package com.nos.multithreading.원자적연산과volatile;
 
-import javax.swing.plaf.basic.BasicButtonUI;
 import java.util.Random;
 
 public class Main {

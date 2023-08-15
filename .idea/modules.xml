@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/multithreading-study.iml" filepath="$PROJECT_DIR$/multithreading-study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/com/nos/multithreading/ReentrantLock/reentrant.lock.iml" filepath="$PROJECT_DIR$/src/com/nos/multithreading/ReentrantLock/reentrant.lock.iml" />
     </modules>
   </component>
 </project>
