@@ -9,6 +9,12 @@ public class Main {
             }
         });
 
+        Thread thread3 = new Thread(() -> {
+            for(int i = 0; i < Integer.MAX_VALUE; i++){
+                sharedClass.increment();
+            }
+        });
+
         Thread thread2 = new Thread(() -> {
             for(int i = 0; i < Integer.MAX_VALUE; i++){
                 sharedClass.checkForDataRace();
@@ -23,7 +29,7 @@ public class Main {
         private volatile int x = 0;
         private volatile int y = 0;
 
-        public  void increment(){
+        public void increment(){
             x++;
             y++;
         }

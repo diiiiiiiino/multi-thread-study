@@ -12,7 +12,7 @@ public class Main2 {
 
         //thread.setDaemon(true); //데몬 스레드로 설정하면 메인스레드가 종료되면 해당 스레드가 애플리케이션 종료를 막지 않는다.
         thread.start();
-        //thread.interrupt();
+        thread.interrupt();
     }
 
     private static class LongComputationTask implements Runnable{

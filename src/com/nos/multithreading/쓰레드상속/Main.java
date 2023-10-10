@@ -56,7 +56,7 @@ public class Main {
         }
     }
 
-    private static class AscendingHackerThread extends  HackerThread {
+    private static class AscendingHackerThread extends HackerThread {
         public AscendingHackerThread(Vault vault){
             super(vault);
         }

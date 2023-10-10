@@ -36,7 +36,7 @@ public class Main {
         for(int readerIndex = 0; readerIndex < numberOfReaderThreads; readerIndex++){
             Thread reader = new Thread(() -> {
                 for(int i = 0; i < 100000; i++){
-                    int upperBoundPrice = random.nextInt(HIGHEST_PRICE);;
+                    int upperBoundPrice = random.nextInt(HIGHEST_PRICE);
                     int lowerBoundPrice = upperBoundPrice > 0 ? random.nextInt(upperBoundPrice) : 0;
                     inventoryDatabase.getNumberOfItemsInPriceRange(lowerBoundPrice, upperBoundPrice);
                 }
